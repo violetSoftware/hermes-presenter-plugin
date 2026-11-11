@@ -1,0 +1,10 @@
+# Reference only: apply via Hermes config set in your chosen profile.
+# This file is not automatically read and contains no credentials.
+engine_root: /absolute/path/to/companion-engine
+port: 5174
+base_url: ""
+microphone: false
+# Omit voice to use active-profile tts.elevenlabs.voice_id.
+# runtime_dir defaults to the active Hermes home/plugin-data/hermes-presenter.
+decks:
+  my-talk: /absolute/path/to/my-talk/deck.json

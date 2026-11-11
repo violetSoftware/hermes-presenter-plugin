@@ -1,0 +1,19 @@
+{
+  "name": "hermes-presenter-engine",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": "^22.22.2 || ^24.15.0 || >=26.0.0"
+  },
+  "dependencies": {
+    "ajv": "8.20.0",
+    "handlebars": "4.7.9",
+    "reveal.js": "5.2.1",
+    "undici": "8.11.2",
+    "vite": "8.3.2"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.63.0"
+  }
+}

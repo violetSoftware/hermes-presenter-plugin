@@ -1,0 +1,14 @@
+{
+  "id": "public-sample",
+  "title": "Shared stage",
+  "language": "en",
+  "date": "2026-01-01",
+  "theme": "purple",
+  "presenter": "Presenter",
+  "website": "example.org",
+  "slides": [{"template": "title-slide", "data": {"title": "Shared stage", "subtitle": "Human and agent take turns"}, "notes": "Introduce the shared stage. The human remains in control."}],
+  "runningOrder": [
+    {"id": "human-intro", "slideId": "public-sample:1", "role": "human", "placeholder": "Welcome. We are demonstrating human and agent turn-taking."},
+    {"id": "agent-intro", "slideId": "public-sample:1", "role": "agent", "guidance": "Briefly explain that the presenter controls handover and the selected deck is the grounding."}
+  ]
+}

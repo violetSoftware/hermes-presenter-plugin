@@ -1,0 +1,43 @@
+name: hermes-presenter
+version: "0.1.2"
+description: Present a selected JSON deck with the calling CLI conversation as co-presenter.
+provides_tools:
+  - presenter_start
+  - presenter_status
+  - presenter_stop
+requires_env:
+  - name: ELEVENLABS_API_KEY
+    required: false
+    description: Active-profile ElevenLabs key; start fails with setup guidance when missing. Status and stop remain available.
+external_dependencies:
+  - Node and matching companion presenter engine with separately installed locked dependencies
+config_schema:
+  engine_root:
+    type: string
+    required: true
+    description: Separately installed companion presenter engine source distribution (same release); required. Never downloaded automatically.
+  runtime_dir:
+    type: string
+    description: Private writable runtime directory; default active Hermes home/plugin-data/hermes-presenter.
+  port:
+    type: integer
+    default: 5174
+    description: Loopback port (0 selects a free port, otherwise 1–65535).
+  base_url:
+    type: string
+    default: ""
+    description: Optional pre-established HTTPS origin. Requires an operator-secured reverse proxy to loopback. No tunnel is created.
+  microphone:
+    type: boolean
+    default: false
+    description: Make ElevenLabs microphone transcription available after browser consent; billed separately.
+  voice:
+    type: string
+    description: Optional ElevenLabs voice ID; otherwise uses active-profile tts.elevenlabs.voice_id.
+  node:
+    type: string
+    default: node
+    description: Installed Node executable. Dependencies must already be installed separately.
+  decks:
+    type: object
+    description: Registered deck names mapped to explicit local JSON files. Registration alone does not approve sharing or costs.

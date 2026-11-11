@@ -1,0 +1,24 @@
+/* Public purple skin: system fonts only; no employer assets. */
+:root { color-scheme: dark; --stage-bg: #1e1233; --stage-panel: #2e1b4b; --stage-accent: #c4b5fd; --stage-ink: #faf5ff; }
+html, body, #app { width: 100%; height: 100%; margin: 0; background: var(--stage-bg); }
+.reveal { font-family: system-ui, sans-serif; font-size: 32px; color: var(--stage-ink); background: var(--stage-bg); }
+.reveal .slides { text-align: left; }
+.reveal .slides section { box-sizing: border-box; height: 100%; padding: 100px 64px 80px; }
+.reveal h1, .reveal h2, .reveal h3 { font-family: inherit; color: var(--stage-ink); font-weight: 700; line-height: 1.12; text-transform: none; letter-spacing: -.025em; }
+.reveal h1 { font-size: 2.45em; margin: .25em 0; }
+.reveal h2 { font-size: 1.7em; }
+.reveal p, .reveal li { line-height: 1.5; }
+.reveal a, .reveal .accent-dot { color: var(--stage-accent); }
+.reveal .title-slide, .reveal .centre-title, .reveal .contact-slide { background: linear-gradient(135deg, #1e1233, #4c1d95); }
+.reveal .subtitle { color: #ddd6fe; font-size: 1.15em; }
+.reveal .slide-header { position: absolute; top: 28px; left: 64px; right: 64px; display: flex; justify-content: space-between; gap: 24px; color: #ddd6fe; font-size: .45em; }
+.reveal .company-logo { position: absolute; bottom: 24px; left: 64px; width: 104px; height: 32px; }
+.reveal .web-link { position: absolute; bottom: 28px; right: 64px; font-size: .45em; color: #ddd6fe; }
+.reveal .two-column, .reveal .two-column-split { display: flex !important; gap: 40px; align-items: center; }
+.reveal .content-column, .reveal .text-column { flex: 1; }
+.reveal img { max-width: 100%; max-height: 65vh; object-fit: contain; }
+.reveal .controls, .reveal .progress { color: var(--stage-accent); }
+.reveal .progress { background: var(--stage-panel); }
+.reveal .progress span { background: var(--stage-accent); }
+.reveal .dark { background: var(--stage-panel); color: var(--stage-ink); }
+.error-panel { font: 1.2rem system-ui, sans-serif; color: var(--stage-ink); padding: 3rem; }
